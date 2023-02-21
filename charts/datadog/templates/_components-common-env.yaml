@@ -60,4 +60,8 @@
 - name: DD_EXCLUDE_PAUSE_CONTAINER
   value: "false"
 {{- end }}
+{{- if eq (include "should-enable-remote-configuration" .) "true" }}
+- name: DD_REMOTE_CONFIGURATION_ENABLED
+  value: "true"
+{{- end }}
 {{- end }}

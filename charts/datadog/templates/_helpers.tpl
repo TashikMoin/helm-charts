@@ -767,3 +767,14 @@ true
 false
 {{- end -}}
 {{- end -}}
+
+{{/*
+Returns true if at least one product enabled Remote Configuration.
+*/}}
+{{- define "should-enable-remote-configuration" -}}
+{{- if .Values.datadog.securityAgent.runtime.remoteConfiguration.enabled -}}
+true
+{{- else -}}
+false
+{{- end -}}
+{{- end -}}

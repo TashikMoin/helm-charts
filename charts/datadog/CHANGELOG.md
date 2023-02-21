@@ -1,11 +1,15 @@
 # Datadog changelog
 
-# 3.19.1
+## 3.19.2
+
+* Add `datadog.securityAgent.runtime.remoteConfiguration.enabled` parameter to enable remote configuration for CWS.
+
+## 3.19.1
 
 * Mount emptyDir volumes in `/etc/datadog-agent` and `/tmp` to allow the cluster-agent to write files in those
   locations with read-only root filesystem.
 
-# 3.19.0
+## 3.19.0
 
 * Declare `readOnly` in volumeMounts.
 
